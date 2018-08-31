@@ -35,7 +35,7 @@ sigma = std(X);
 
 % mu = ones(1,m)*X./m;
 % for i = 1:n,
-%  sigma(1,i) = max(X(:,i)) - min(X(:,i));
+%  sigma(1,i) = max(X(:,i)) - min(X(:,i));  %calculation based on description in lecture notes, known to not be standard deviation
 % end;
 
 for i = 1:n,
