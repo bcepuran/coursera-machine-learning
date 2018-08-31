@@ -18,14 +18,14 @@ for iter = 1:num_iters
     %
 
 
+    % predictions = X*theta;
+    % diff = predictions - y;
+    % temp0 = alpha*(1/m)*sum(diff .* X(:,1));
+    % temp1 = alpha*(1/m)*sum(diff .* X(:,2));
+    % temp2 = alpha*(1/m)*sum(diff .* X(:,3));
+    % theta -= [temp0; temp1; temp2];
 
-
-
-
-
-
-
-
+    theta = theta -((1/m) * ((X * theta) - y)' * X)' * alpha;
 
     % ============================================================
 
